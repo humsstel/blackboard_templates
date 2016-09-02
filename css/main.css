@@ -1,0 +1,350 @@
+/**********************************
+FONTS
+***********************************/
+
+h1 {
+    font-family: 'Oswald', sans-serif; 
+    font-size: 70px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif; 
+}
+
+.OneHeading {
+}
+
+.TwoHeading {
+}
+
+.ThreeHeading {
+    /* color: #2c3e50; */
+}
+
+.FourHeading {
+}
+
+.FiveHeading {
+}
+
+.SixHeading {
+}
+
+.SevenHeading {
+    color: #49205E
+}
+
+.light {
+    color: #4C4E56;
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+}
+
+.panel-title {
+    font-family: 'Cabin', sans-serif;
+}
+
+.panel-body {
+    font-family: 'Cabin', sans-serif;
+}
+
+.text-muted {
+    font-size: 0.8em;
+    padding-top: 10px;
+}
+
+a.skiplink:link {
+    color: #49205E;
+}
+
+a.skiplink:visited {
+    color: #49205E;
+}
+
+a.skiplink: active {
+    color: #49205E;
+}
+
+a.footerlink:link {
+    color: #49205E;
+}
+
+a.footerlink:visited {
+    color: #49205E;
+}
+
+a.footerlink: active {
+    color: #49205E;
+}
+
+/**********************************
+GENERAL
+***********************************/
+
+body {
+    margin: 0;
+    background: #fff;
+}
+
+.img-thumbnail {
+    margin: 20% auto 0 auto;
+}
+
+.footer {
+    background-color: #eee;
+}
+
+.screenshot {
+    margin-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comparisonScreenshot1 {
+    margin-top: 10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.comparisonScreenshot2 {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.logoKeele {
+    padding-right: 10px;
+}
+
+.btn-block {
+    margin-top: 30px;
+}
+
+/**********************************
+WRAPPERS
+***********************************/
+
+.OneWrapper {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(128, 91, 165, 0.8), 
+      rgba(188, 81, 158, 0.8)
+    ),
+    /* bottom, image */
+    url("/images/_31R1002_min.jpg");
+    background-size: cover;
+}
+
+.TwoWrapper {
+    background-color: #2F3C5E;
+}
+
+/*.ThreeWrapper {
+    background-image: url("https://googledrive.com/host/0BznPf6nOHLByamJ0bWxDaVJnUEk");
+        /* linear-gradient(
+        to bottom, rgba(63, 81, 181, 0.6) 0%,
+        rgba(63, 81, 181, 0.6) 100%), 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}*/
+
+.FourWrapper {
+    background-color: #185567;
+}
+    
+.FiveWrapper {
+    background-color: #45ADA8;
+}
+
+.SixWrapper {
+    background-color: #DBD8D8;
+}
+
+.SevenWrapper {
+    background-color: #fff;
+}
+
+
+/**********************************
+CONTENT
+***********************************/
+
+.contentonly {
+    margin: 0;
+    padding: 100px 0 200px 0;
+}
+
+.contenttop {
+    padding: 100px 0 0 0;
+}
+
+.contentbtm {
+    padding: 0 0 200px 0;
+}
+
+/**********************************
+NAV IMAGES
+***********************************/
+
+.headlogo {
+    padding: 20px 0 0 20px;
+}
+
+#tracker {
+    bottom: 0;
+    height: 55%;
+    left: 50%;
+    margin: 0 auto 0 -490px;
+    position: fixed;
+    width: 100px;
+}
+
+.main-icon {
+    font-size: 80px;
+    padding: 100px 0 0 0;
+    color: white;
+}
+
+.template-icon {
+    font-size: 100px;
+    padding-top: 20px;
+    color: white;
+}
+
+.plus-icon {
+    font-size: 60px;
+    padding-top: 20px;
+    color: white;
+}
+
+/**********************************
+SIZING
+***********************************/
+
+@media only screen and (max-width: 570px) {
+    
+    .text-muted {
+        line-height: 120%;
+} 
+    .logoKeele {
+        float: left;   
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 50px;
+    }
+    .videobtn {
+        margin-bottom: 20px;
+    }
+    
+    .text-muted {
+        line-height: 100%;
+    }
+
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/**********************************
+PROGRESS BAR
+***********************************/
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .50em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: #263238;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: #263238;
+}
+
+.flat::-moz-progress-bar {
+  background-color: #263238;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, #263238);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, #263238);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, green, #263238);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -moz-linear-gradient(left, green, #263238);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .50em;
+  display: block;
+}
+
+.progress-bar {
+  background-color: #263238;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
