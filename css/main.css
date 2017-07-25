@@ -92,9 +92,12 @@ WRAPPERS
 .OneWrapper {
     background: 
     /* top, transparent gradient */ 
-    -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6)0%, rgba(49, 49, 49, 1)95%),
+    linear-gradient(
+        rgba(0, 0, 0, 0.6) 0%, 
+        rgba(49, 49, 49, 1) 95%
+    ),
     /* bottom, image */
-    url("/img/Background_Image_Min.png");
+    url(../img/Background_Image_Min.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -129,7 +132,7 @@ WRAPPERS
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)
     ),
-    url("/img/KeeleUni_Oct15_034.jpg");
+    url(../img/KeeleUni_Oct15_034.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
