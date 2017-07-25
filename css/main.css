@@ -10,6 +10,7 @@ h1 {
 
 h2 {
     font-family: 'Oswald', sans-serif; 
+    color: #fff;
 }
 
 .OneHeading {
@@ -32,11 +33,14 @@ h2 {
 }
 
 .SevenHeading {
-    color: #49205E
+}
+
+.EightHeading {
+    color: #313131;
 }
 
 .light {
-    color: #4C4E56;
+    color: #313131;
 }
 
 p {
@@ -47,12 +51,8 @@ p {
     color: white;
 }
 
-.panel-title {
-    font-family: 'Cabin', sans-serif;
-}
-
-.panel-body {
-    font-family: 'Cabin', sans-serif;
+.FourWrapper a {
+    color: #B434A1;
 }
 
 /**********************************
@@ -61,15 +61,7 @@ GENERAL
 
 body {
     margin: 0;
-    background: #fff;
-}
-
-.img-thumbnail {
-    margin: 20% auto 0 auto;
-}
-
-.footer {
-    background-color: #eee;
+    background: #eee;
 }
 
 .screenshot {
@@ -79,23 +71,18 @@ body {
     margin-right: auto;
 }
 
-.comparisonScreenshot1 {
-    margin-top: 10px;
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.comparisonScreenshot2 {
-    margin-top: 10px;
-    display: inline-block;
-}
-
 .logoKeele {
     padding-right: 10px;
 }
 
-.btn-block {
-    margin-top: 30px;
+
+.accordionHeading {
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+}
+
+.accordionDropdown{
+    margin-top: 5px;
 }
 
 /**********************************
@@ -104,43 +91,55 @@ WRAPPERS
 
 .OneWrapper {
     background: 
-    /* top, transparent purple gradient */ 
-    linear-gradient(
-      rgba(128, 91, 165, 0.8), 
-      rgba(188, 81, 158, 0.8)
-    ),
+    /* top, transparent gradient */ 
+    -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6)0%, rgba(49, 49, 49, 1)95%),
     /* bottom, image */
-    url("/images/_31R1002_min.jpg");
+    url("/img/Background_Image_Min.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .TwoWrapper {
-    background-color: #2F3C5E;
+    background-color: #313131;
 }
 
-/*.ThreeWrapper {
-    background-image: url("https://googledrive.com/host/0BznPf6nOHLByamJ0bWxDaVJnUEk");
-        /* linear-gradient(
-        to bottom, rgba(63, 81, 181, 0.6) 0%,
-        rgba(63, 81, 181, 0.6) 100%), 
+.ThreeWrapper {
+    background-color: #313131;
+}
+
+.FourWrapper {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/KeeleUni_Oct15_040.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}*/
-
-.FourWrapper {
-    background-color: #185567;
 }
     
 .FiveWrapper {
-    background-color: #45ADA8;
+    background-color: #313131;
 }
 
 .SixWrapper {
-    background-color: #DBD8D8;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/img/KeeleUni_Oct15_034.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .SevenWrapper {
+    background-color: #313131;
+}
+
+.EightWrapper {
     background-color: #fff;
 }
 
@@ -154,20 +153,34 @@ CONTENT
     padding: 100px 0 200px 0;
 }
 
-.contenttop {
-    padding: 100px 0 0 0;
+hr {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.contentbtm {
-    padding: 0 0 200px 0;
+.btn-primary {
+    background-color: #B434A1;
+    border-color: #B434A1;
+}
+
+.btn-primary:hover {
+    background-color: #832E79;
+    border-color: #832E79;
+}
+
+.SevenWrapper .videobtn:visited {
+    color: #fff;
+    text-decoration: none;
 }
 
 /**********************************
 NAV IMAGES
 ***********************************/
 
-.headlogo {
-    padding: 20px 0 0 20px;
+.headLogo {
+    margin: 30px 0 0 35px;
+    width: 200px;
 }
 
 #tracker {
@@ -191,32 +204,14 @@ NAV IMAGES
     color: white;
 }
 
-.plus-icon {
-    font-size: 60px;
-    padding-top: 20px;
-    color: white;
-}
-
 /**********************************
 SIZING
 ***********************************/
 
-@media only screen and (max-width: 570px) {
-    
-    .logoKeele {
-        float: left;   
-    }
-    
-}
-
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 499px) {
     h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
-    .videobtn {
-        margin-bottom: 20px;
-    }
-
 }
 
 /**********************************
@@ -228,38 +223,38 @@ FOOTER
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #eee;
 }
 
 .text-align {
     font-size: 0.8em;
-    padding-top: 10px;
+    padding-top: 20px;
     line-height: 120%;
     color: darkgrey;
 }
 
 a.skiplink:link {
-    color: #49205E;
+    color: #B434A1;
 }
 
 a.skiplink:visited {
-    color: #49205E;
+    color: #B434A1;
 }
 
 a.skiplink: active {
-    color: #49205E;
+    color: #B434A1;
 }
 
 a.footerlink:link {
-    color: #49205E;
+    color: #B434A1;
 }
 
 a.footerlink:visited {
-    color: #49205E;
+    color: #B434A1;
 }
 
-a.footerlink: active {
-    color: #49205E;
+a.footerlink:active {
+    color: #B434A1  ;
 }
 
 /**********************************
@@ -288,7 +283,7 @@ progress {
   background-color: transparent;
 
   /* For IE10+, color of the progress bar */
-  color: #263238;
+  color: #bc3084;
 }
 
 progress::-webkit-progress-bar {
@@ -296,35 +291,35 @@ progress::-webkit-progress-bar {
 }
 
 .flat::-webkit-progress-value {
-  background-color: #263238;
+  background-color: #B434A1;
 }
 
 .flat::-moz-progress-bar {
-  background-color: #263238;
+  background-color: #B434A1;
 }
 
 .single::-webkit-progress-value {
   background-color: transparent;
-  background-image: -webkit-linear-gradient(left, transparent, #263238);
+  background-image: -webkit-linear-gradient(left, transparent, #B434A1);
 }
 
 .single::-moz-progress-bar {
   background-color: transparent;
-  background-image: -moz-linear-gradient(left, transparent, #263238);
+  background-image: -moz-linear-gradient(left, transparent, #B434A1);
 }
 
 .multiple::-webkit-progress-value {
   background-image: -webkit-linear-gradient(-45deg, 
                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
                                rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -webkit-linear-gradient(left, green, #263238);
+                      -webkit-linear-gradient(left, green, #B434A1);
 }
 
 .multiple::-moz-progress-bar {
   background-image: -moz-linear-gradient(-45deg, 
                                transparent 33%, rgba(0, 0, 0, .1) 33%, 
                                rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -moz-linear-gradient(left, green, #263238);
+                      -moz-linear-gradient(left, green, #B434A1);
 }
 
 .progress-container {
@@ -338,7 +333,7 @@ progress::-webkit-progress-bar {
 }
 
 .progress-bar {
-  background-color: #263238;
+  background-color: #B434A1;
   width: 50%;
   display: block;
   height: inherit;
